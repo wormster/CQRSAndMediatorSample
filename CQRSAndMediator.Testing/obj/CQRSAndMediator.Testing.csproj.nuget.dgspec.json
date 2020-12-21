@@ -1,35 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator.Testing/CQRSAndMediator.Testing.csproj": {}
+    "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator.Testing\\CQRSAndMediator.Testing.csproj": {}
   },
   "projects": {
-    "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator.Testing/CQRSAndMediator.Testing.csproj": {
+    "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator.Testing\\CQRSAndMediator.Testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator.Testing/CQRSAndMediator.Testing.csproj",
+        "projectUniqueName": "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator.Testing\\CQRSAndMediator.Testing.csproj",
         "projectName": "CQRSAndMediator.Testing",
-        "projectPath": "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator.Testing/CQRSAndMediator.Testing.csproj",
-        "packagesPath": "/Users/macintosh/.nuget/packages/",
-        "outputPath": "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator.Testing/obj/",
+        "projectPath": "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator.Testing\\CQRSAndMediator.Testing.csproj",
+        "packagesPath": "C:\\Users\\johnw\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator.Testing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/macintosh/.config/NuGet/NuGet.Config"
+          "C:\\Users\\johnw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\nas-polymathic\\polymathic_nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator/CQRSAndMediator.csproj": {
-                "projectPath": "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator/CQRSAndMediator.csproj"
+              "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator\\CQRSAndMediator.csproj": {
+                "projectPath": "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator\\CQRSAndMediator.csproj"
               }
             }
           }
@@ -41,37 +47,30 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
-              "version": "[1.4.0, )"
+              "version": "[2.2.0-preview-20201126-03, )"
             },
             "MSTest.TestFramework": {
               "target": "Package",
-              "version": "[1.4.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Core": {
-              "target": "Package",
-              "version": "[2.2.5, )"
+              "version": "[2.2.0-preview-20201126-03, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
+              "version": "[16.9.0-preview-20201123-03, )"
             },
             "Moq": {
               "target": "Package",
-              "version": "[4.13.1, )"
+              "version": "[4.15.2, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[1.3.0, )"
             },
             "xunit": {
               "target": "Package",
@@ -81,7 +80,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
@@ -94,33 +93,47 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20601.7\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator/CQRSAndMediator.csproj": {
+    "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator\\CQRSAndMediator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator/CQRSAndMediator.csproj",
+        "projectUniqueName": "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator\\CQRSAndMediator.csproj",
         "projectName": "CQRSAndMediator",
-        "projectPath": "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator/CQRSAndMediator.csproj",
-        "packagesPath": "/Users/macintosh/.nuget/packages/",
-        "outputPath": "/Users/macintosh/Downloads/CQRSAndMediator/CQRSAndMediator/obj/",
+        "projectPath": "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator\\CQRSAndMediator.csproj",
+        "packagesPath": "C:\\Users\\johnw\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\CQRSAndMediatorSample\\CQRSAndMediator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/macintosh/.config/NuGet/NuGet.Config"
+          "C:\\Users\\johnw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\nas-polymathic\\polymathic_nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -131,36 +144,20 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[9.0.0, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
+              "version": "[9.0.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[5.0.1, )"
             }
           },
           "imports": [
@@ -173,7 +170,15 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20601.7\\RuntimeIdentifierGraph.json"
         }
       }
     }

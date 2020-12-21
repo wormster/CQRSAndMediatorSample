@@ -9,6 +9,13 @@ namespace CQRSAndMediator.Handlers.CommandHandlers
 {
     public class MakeOrderCommandHandler: IRequestHandler<MakeOrderRequestModel , MakeOrderResponseModel>
     {
+        private readonly IMediator _mediator;
+
+        public MakeOrderCommandHandler(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
         public async Task<MakeOrderResponseModel> Handle(MakeOrderRequestModel request, CancellationToken cancellationToken)
         {
             var result = new MakeOrderResponseModel
@@ -16,7 +23,8 @@ namespace CQRSAndMediator.Handlers.CommandHandlers
                 IsSuccess = true,
                 OrderId = new Guid("43d26807-ad70-4449-8479-024c54eb2006")
             };
-            // Your business logic here
+            // Publish notification
+            await _mediator.Publish(new Events.OrderCreatedEvent(result.OrderId), cancellationToken);
 
             return result;
         }

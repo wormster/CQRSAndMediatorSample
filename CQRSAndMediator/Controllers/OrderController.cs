@@ -4,6 +4,7 @@ using CQRSAndMediator.RequestModels.CommandRequestModels;
 using CQRSAndMediator.RequestModels.QueryRequestModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace CQRSAndMediator.Controllers
 {
@@ -32,6 +33,15 @@ namespace CQRSAndMediator.Controllers
         {
             //var response = _makeOrderCommandHandler.MakeOrder(requestModel);
             var response = _mediator.Send(requestModel);
+            return Ok(response);
+        }
+
+        [HttpPost("addorder")]
+        public async Task<IActionResult> AddOrder([FromBody] MakeOrderRequestModel requestModel)
+        {
+            //var response = _makeOrderCommandHandler.MakeOrder(requestModel);
+            var response = await _mediator.Send(requestModel);
+            //await _mediator.Publish(requestModel, cancellationToken);
             return Ok(response);
         }
 
