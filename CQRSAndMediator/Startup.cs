@@ -26,18 +26,7 @@ namespace CQRSAndMediator
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-    //.ConfigureApiBehaviorOptions(options =>
-    //{
-    //    options.SuppressModelStateInvalidFilter = true;
-    //    options.SuppressMapClientErrors = true;
-    //})
-    //.AddJsonOptions(options =>
-    //{
-    //    options.JsonSerializerOptions.PropertyNamingPolicy = null;
-    //});
 
-            //services.AddScoped<IGetOrderByIdQueryHandler, GetOrderByIdQueryHandler>();
-            //services.AddScoped<IMakeOrderCommandHandler, MakeOrderCommandHandler>();
             services.AddMediatR(Assembly.GetExecutingAssembly());
         }
 

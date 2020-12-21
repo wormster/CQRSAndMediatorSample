@@ -12,16 +12,6 @@ namespace CQRSAndMediator.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
-        //private readonly IGetOrderByIdQueryHandler _getOrderByIdQueryHandler;
-        //private readonly IMakeOrderCommandHandler _makeOrderCommandHandler;
-
-        //public OrderController(IGetOrderByIdQueryHandler getOrderByIdQueryHandler,
-        //    IMakeOrderCommandHandler makeOrderCommandHandler)
-        //{
-        //    _getOrderByIdQueryHandler = getOrderByIdQueryHandler;
-        //    _makeOrderCommandHandler = makeOrderCommandHandler;
-        //}
-
         private readonly IMediator _mediator;
         public OrderController(IMediator mediator)
         {
@@ -31,7 +21,6 @@ namespace CQRSAndMediator.Controllers
         [HttpPost("makeorder")]
         public IActionResult MakeOrder([FromBody] MakeOrderRequestModel requestModel)
         {
-            //var response = _makeOrderCommandHandler.MakeOrder(requestModel);
             var response = _mediator.Send(requestModel);
             return Ok(response);
         }
@@ -39,16 +28,14 @@ namespace CQRSAndMediator.Controllers
         [HttpPost("addorder")]
         public async Task<IActionResult> AddOrder([FromBody] MakeOrderRequestModel requestModel)
         {
-            //var response = _makeOrderCommandHandler.MakeOrder(requestModel);
             var response = await _mediator.Send(requestModel);
-            //await _mediator.Publish(requestModel, cancellationToken);
+
             return Ok(response);
         }
 
         [HttpGet("order")]
         public IActionResult OrderDetails([FromQuery] GetOrderByIdRequestModel requestModel)
         {
-            //var response = _getOrderByIdQueryHandler.GetOrderById(requestModel);
             var response = _mediator.Send(requestModel);
             return Ok(response);
         }
